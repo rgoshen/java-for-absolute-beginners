@@ -48,7 +48,7 @@ public class MergeSort implements IntSorter {
     public void sort(int[] arr, int low, int high) {
         StringBuilder sb = new StringBuilder("Call sort of ")
                 .append(": [")
-                    .append(low).append(" ").append(high)
+                .append(low).append(" ").append(high)
                 .append("] ");
         for (int i = low; i <= high; ++i) {
             sb.append(arr[i]).append(" ");

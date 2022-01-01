@@ -33,6 +33,7 @@ package com.apress.bgn.ch6;
  */
 public class UnaryOperatorsDemo {
     public static void main(String... args) {
+        System.out.println("\nIncrementors:");
         int i = 1;
         int j = ++i;
         System.out.println("j is " + j + ", i is " + i);
@@ -40,16 +41,24 @@ public class UnaryOperatorsDemo {
         i = 1;
         j = i++;
         System.out.println("j is " + j + ", i is " + i);
+        System.out.println("\nDecrementors:");
 
+        i = 2;
+        j = --i;
+        System.out.println("j is " + j + ", i is " + i);
+
+        i = 2;
+        j = i--;
+        System.out.println("j is " + j + ", i is " + i);
         System.out.println("\nNegation operators:");
 
         byte b = 10;
-        System.out.println("decimal:" + b);
+        System.out.println("decimal: " + b);
         String str = String.format("%8s", Integer.toBinaryString(b & 0xFF)).replace(' ', '0');
-        System.out.println("binary:" + str);
+        System.out.println("binary: " + str);
         System.out.println("---------");
 
         int k = 22;
-        System.out.println("binary:" + Integer.toBinaryString(k));
+        System.out.println("binary: " + Integer.toBinaryString(k));
     }
 }

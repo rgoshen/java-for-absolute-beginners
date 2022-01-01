@@ -53,7 +53,7 @@ public class ArraysDemo {
 
         // setting elements explicitly
         ad.array[0] = 5;
-        ad.array[3] =7;
+        ad.array[1] =7;
         for (int i = 0; i < ad.array.length; ++i) {
             System.out.println("array["+ i +"]= " + ad.array[i]);
         }
